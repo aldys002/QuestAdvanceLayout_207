@@ -81,3 +81,7 @@ fun ActivitasPertama(modifier: Modifier){
         }
     }
 }
+
+Card(
+
+)
