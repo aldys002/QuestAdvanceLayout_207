@@ -43,7 +43,7 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(containerColor = Color.DarkGray
             )){
             Row() {
-                val gambar = painterResource(id = R.drawable.LOGO)
+                val gambar = painterResource(id = R.drawable.logo)
                 Image(
                     painter = gambar,
                     contentDescription = null,
