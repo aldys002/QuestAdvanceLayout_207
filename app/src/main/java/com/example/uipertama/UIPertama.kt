@@ -85,36 +85,39 @@ fun ActivitasPertama(modifier: Modifier){
                 .padding(all = 12.dp),
             colors = CardDefaults.cardColors(containerColor = Color.Blue)
         ){
-            val gambar = painterResource(id = R.drawable.logo)
-            Image(
-                painter = gambar,
-                contentDescription = null,
-                modifier = Modifier
-                    .size(size = 100.dp)
-                    .padding(all = 5.dp)
-            )
-            Spacer(modifier = Modifier.width(width = 30.dp))
+            Row {
+                val gambar = painterResource(id = R.drawable.logo)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 5.dp)
+                )
+                Spacer(modifier = Modifier.width(width = 30.dp))
 
-            Column {
-                Text(
-                    text = stringResource(id = R.string.nama2),
-                    fontSize = 30.sp,
-                    fontFamily = FontFamily.Cursive,
-                    color = Color.White,
-                    modifier = Modifier.padding(top = 15.dp)
-                )
-                Text(
-                    text = stringResource(id = R.string.alamat2),
-                    fontSize = 20.sp,
-                    color = Color.Cyan,
-                    modifier = Modifier.padding(top=5.dp)
-                )
-                Text(
-                    text = stringResource(id = R.string.nohp2),
-                    fontSize = 18.sp,
-                    color = Color.White,
-                    modifier = Modifier.padding(top = 5.dp)
-                )
+                Column {
+                    Text(
+                        text = stringResource(id = R.string.nama2),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat2),
+                        fontSize = 20.sp,
+                        color = Color.Cyan,
+                        modifier = Modifier.padding(top=5.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.nohp2),
+                        fontSize = 18.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                }
+
             }
         }
         Card(
